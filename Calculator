@@ -1,0 +1,624 @@
+@@ -0,0 +1,623 @@
+
+<!DOCTYPE html>
+<?php
+/*
+Plugin Name: Grant Calculator
+Plugin URI: http://example.com
+Description: I swear I wasn't playing Dark Souls whilst making this and definitely not writing a rap about the game in between coding
+Version: 1.0
+Author: Mikey-Sama
+Author URI: http://w3guy.com
+*/
+    //
+    // the plugin code will go here..
+    //
+
+if(!is_admin()) {
+
+    add_action( 'init', 'foo' );
+
+    function foo() {
+        wp_enqueue_style('theme', style.css() . 'theme.css');
+        get_template_part('theme');   
+    }
+
+
+}
+
+function html_form_code() {
+       echo       '<html><head>';
+       echo       '<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />';
+       echo       '<title>Instant Quote Calculator - Smart Clean</title>';
+       echo       '<meta name="description" content=" " />';
+       echo       '<link rel="canonical" href="http://swww.smartclean.net/" />';
+       echo       '<link href="default.css" rel="stylesheet" type="text/css" media="screen" />';
+       echo       '<link href="theme.css" rel="stylesheet" type="text/css" media="screen" />';
+       echo       '<link href="Style.css" rel="stylesheet" type="text/css" media="screen" />';
+       echo       '<link href="drop.css" rel="stylesheet" type="text/css" media="screen" />';
+       echo       '<link href="jgrowl.css" rel="stylesheet" type="text/css" />';
+       echo       '<!DOCTYPE html>';
+       echo       '<head>';
+       echo       '<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />';
+       echo       '<title>Instant Quote Calculator - Smart Clean</title>';
+       echo       '<meta name="description" content=" " />';
+       echo       '<link rel="canonical" href="http://swww.smartclean.net/" />';
+       echo       '<link href="assets/templates/icwebdesign/bootstrap-smartclean.css" rel="stylesheet" type="text/css" media="screen" />';
+       echo       '<link href="assets/templates/icwebdesign/default.css" rel="stylesheet" type="text/css" media="screen" />';
+       echo       '<link href="assets/templates/icwebdesign/style.css" rel="stylesheet" type="text/css" media="screen" />';
+       echo       '<link href="assets/templates/icwebdesign/ultimate_drop.css" rel="stylesheet" type="text/css" media="screen" />';
+       echo       '<link href="assets/templates/icwebdesign/jquery.jgrowl.css" rel="stylesheet" type="text/css" />';
+       echo       '<!--<[if !mobile]>';
+       echo       '<link type="text/css" rel="stylesheet" media="only screen and (max-device-width: 480px)" href="http://www.smartclean.net/assets/templates/icwebdesign/iphone.css" />';
+       echo       '<link type="text/css" rel="stylesheet" media="only screen and (min-device-width: 768px) and (max-device-width: 1024px)" href="http://www.smartclean.net/assets/templates/icwebdesign/ipad.css" />';
+       echo       '<![endif]-->';
+       echo       '<script type="text/javascript" src="jquery-1.7.2.min.js"></script>';
+       echo       '<script type="text/javascript" src="assets/templates/icwebdesign/quoteCalculatorcheck.js"></script>';
+       echo       '<script type="text/javascript" src="assets/templates/icwebdesign/jquery.jgrowl_minimized.js"></script>';
+       echo       '<script type="text/javascript" src="increm.js"></script>';
+       echo       '<script type="text/javascript" src="dropdowncontent.js"></script>';
+       echo       '<!-- <script type="text/javascript" src="assets/js/rightclick.js"></script> -->';
+       echo       '</head>';
+       echo       '<body>';
+       echo       '</div><div id="border">';
+       echo       '<div id="middle_outer">';
+       echo       '<div id="topheader_left"><a href="http://www.smartclean.net"><img src="assets/templates/icwebdesign/images/smartclean.jpg" alt="Smart Clean - Carpet Cleaning Cardiff" width="320" height="100" border="0"/></a></a></div>';
+       echo       '<div id="header_middle"><a href="#official"><img src="assets/templates/icwebdesign/images/no1-top.jpg" alt="Smart Clean No1 Carpet &amp; Sofa Cleaners" width="218" height="80" border="0" /></a></div>';
+       echo       '<div id="header_right">';
+       echo       '<div class="free">Free Phone</div>';
+       echo       '<div class="telephoneColumn">';
+       echo       '<div class="telephone">0800 015 6262</div>';
+       echo       '</div>';
+       echo       '<div class="LinesColumn">';
+       echo       '<div class="lines">Lines open<br/>';
+       echo       'Monday - Saturday <br/>';
+       echo       '9am - 6pm</div>';
+       echo       '</div>';
+       echo       '<div id="arrow"> <a href="#" id="searchlink" rel="subcontent">Calling from your mobile phone? View our local telephone numbers</a></div>';
+       echo       '<div id="subcontent"><p>Call your local Smart Clean office</p>';
+       echo       '<table border="0" cellspacing="2" cellpadding="2" width="330">';
+       echo       '<tbody>';
+       echo       '<tr>';
+       echo       '<td width="90"><strong>Town/City </strong></td>';
+       echo       '<td width="120"><strong>Postcode Areas</strong></td>';
+       echo       '<td width="120"><strong>Local  numbers</strong></td>';
+       echo       '</tr>';
+       echo       '<tr>';
+       echo       '<td width="90" bgcolor="#b9e1f8">Bristol</td>';
+       echo       '<td width="120" bgcolor="#b9e1f8">BS & BA</td>';
+       echo       '<td width="120" bgcolor="#b9e1f8"><a href="tel:01179000452">0117 9000 452</a></td>';
+       echo       '</tr>';
+       echo       '<tr>';
+       echo       '<td width="90">Cardiff</td>';
+       echo       '<td width="120">CF</td>';
+       echo       '<td width="120"><a href="tel:02920501235">02920 501 235</a></td>';
+       echo       '</tr>';
+       echo       '<tr>';
+       echo       '<td width="90" bgcolor="#b9e1f8">Gloucester&nbsp;</td>';
+       echo       '<td width="120" bgcolor="#b9e1f8">GL & HR</td>';
+       echo       '<td width="120" bgcolor="#b9e1f8"><a href="tel:01452899707">01452 899 707</a></td>';
+       echo       '</tr>';
+       echo       '<tr>';
+       echo       '<td width="90">Newport</td>';
+       echo       '<td width="120">NP</td>';
+       echo       '<td width="120"><a href="tel:01633759232">01633 759 232</a></td>';
+       echo       '</tr>';
+       echo       '<tr>';
+       echo       '<td bgcolor="#B9E1F8">Solihull</td>';
+       echo       '<td bgcolor="#B9E1F8">B & CV</td>';
+       echo       '<td bgcolor="#B9E1F8"><a href="tel:01216738284">0121 673 8284</a></td>';
+       echo       '</tr>';
+       echo       '<tr>';
+       echo       '<td width="90" bgcolor="#efefef">Swansea</td>';
+       echo       '<td width="120" bgcolor="#efefef">SA</td>';
+       echo       '<td bgcolor="#efefef"><a href="tel:01792356016">01792 356 016</a></td>';
+       echo       '</tr>';
+       echo       '<tr>';
+       echo       '<td bgcolor="#B9E1F8">Swindon</td>';
+       echo       '<td bgcolor="#B9E1F8">SN&nbsp;</td>';
+       echo       '<td bgcolor="#B9E1F8"><a href="tel:01793461699">01793 461 699</a></td>';
+       echo       '</tr>';
+       echo       '<tr>                                          ';
+       echo       '<td bgcolor="#efefef">Taunton</td>';
+       echo       '<td bgcolor="#efefef">TA&nbsp;</td>';
+       echo       '<td bgcolor="#efefef"><a href="tel:01823729727">01823 729 727</a></td>';
+       echo       '</tr>';
+       echo       '<tr>';
+       echo       '<td bgcolor="#B9E1F8">Worcester</td>';
+       echo       '<td bgcolor="#B9E1F8">WR & DY</td>';
+       echo       '<td bgcolor="#B9E1F8"><a href="tel:01905852302">01905 852 302</a></td>';
+       echo       '</tr>';
+       echo       '<tr>';
+       echo       '<td width="90">&nbsp;</td>';
+       echo       '<td width="120">&nbsp;</td>';
+       echo       '<td>&nbsp;</td>';
+       echo       '</tr>';
+       echo       '</tbody>';
+       echo       '</table>';
+       echo       '<div><a href="javascript:dropdowncontent.hidediv("subcontent2")">Close</a></div></div>';
+       echo       '<script type="text/javascript">';
+
+echo    '<div id="bodyleftsection">';
+echo    '<div id="body_left_compare">';
+echo    '<h1>Instant Quote</h1>';
+echo    '<div class="iphone">';
+echo    '<form id="newquoteForm" method="post" action="quote" name="newquoteForm" onSubmit="return checkTotal( );">';
+echo    '<span class="left2">';
+echo    '<span class="liquid_left2">';
+echo    '<h2>Carpets &amp; Rugs</h2>';
+echo    '<span class="quotebox">';
+echo    '<h4>Lounge</h4>';
+echo    '<p>Lounge</p>';
+echo    '<div class="elementsQuantity">';
+echo    '<input';
+echo    'id="input-1"';
+echo    'class="quantityBox"';
+echo    'onFocus="clearDefault(this)"';
+echo    'type="textbox"';
+echo    'name="Lounge"';
+echo    'value="0"';
+echo    '/>';
+echo    '<div class="inc plus" onclick="update(1, true);">+</div>';
+echo    '<div class="dec plus" onclick="update(1, false);">-</div>';
+echo    '</div>';
+echo    '<span class="item_prices" id="price-1">£40 each</span>';
+echo    '</span>';
+echo    '<span class="quotebox">';
+echo    '<h4>Large Lounge</h4>';
+echo    '<p></p>';
+echo    '<div class="elementsQuantity">';
+echo    '<input';
+echo    'id="input-2"';
+echo    'class="quantityBox"';
+echo    'onFocus="clearDefault(this)"';
+echo    'type="textbox"';
+echo    'name="Large_Lounge"';
+echo    'value="0"';
+echo    '/>';
+echo    '<div class="inc plus" onclick="update(2, true);">+</div>';
+echo    '<div class="dec plus" onclick="update(2, false);">-</div>                     ';
+echo    '</div>';
+echo    '<span class="item_prices" id="price-2">£50 each</span>';
+echo    '</span>';
+echo    '<span class="quotebox">';
+echo    '<h4>Lounge/Dining Room</h4>';
+echo    '<p>upstairs passage</p>';
+echo    '<div class="elementsQuantity">';
+echo    '<input';
+echo    'id="input-3"';
+echo    'class="quantityBox"';
+echo    'onFocus="clearDefault(this)"';
+echo    'type="textbox"';
+echo    'name="Lounge/Dining_Room"';
+echo    'value="0"';
+echo    '/>';
+echo    '<div class="inc plus" onclick="update(3, true);">+</div>';
+echo    '<div class="dec plus" onclick="update(3, false);">-</div>  ';
+echo    '</div>';
+echo    '<span class="item_prices" id="price-3">£60 each</span>';
+echo    '</span>';
+echo    '<span class="quotebox">';
+echo    '<h4>Dining Room</h4>';
+echo    '<p>regular or large </p>';
+echo    '<div class="elementsQuantity">';
+echo    '<input';
+echo    'id="input-4"';
+echo    'class="quantityBox"';
+echo    'onFocus="clearDefault(this)"';
+echo    'type="textbox"';
+echo    'name="Dining_Room"';
+echo    'value="0"';
+echo    '/>';
+echo    '<div class="inc plus" onclick="update(4, true);">+</div>';
+echo    '<div class="dec plus" onclick="update(4, false);">-</div>                     ';
+echo    '</div>';
+echo    '<span class="item_prices"id="price-4">£20 each</span>';
+echo    '</span>';
+echo    '<span class="quotebox">';
+echo    '<h4>Double Bedroom</h4>';
+echo    '<p>single living room</p>';
+echo    '<div class="elementsQuantity">';
+echo    '<input';
+echo    'id="input-5"';
+echo    'class="quantityBox"';
+echo    'onFocus="clearDefault(this)"';
+echo    'type="textbox"';
+echo    'name="Double_Bedroom"';
+echo    'value="0"';
+echo    '/>';
+echo    '<div class="inc plus" onclick="update(5, true);">+</div>';
+echo    '<div class="dec plus" onclick="update(5, false);">-</div>                      ';
+echo    '</div>';
+echo    '<span class="item_prices"id="price-5">£30 each</span>';
+echo    '</span>';
+echo    '<span class="quotebox">';
+echo    '<h4>Large Double Bedroom</h4>';
+echo    '<p>joined through room</p>';
+echo    '<div class="elementsQuantity">';
+echo    '<input';
+echo    'id="input-6"';
+echo    'class="quantityBox"';
+echo    'onFocus="clearDefault(this)"';
+echo    'type="textbox"';
+echo    'name="Large_Double_Bedroom"';
+echo    'value="0"';
+echo    '/>';
+echo    '<div class="inc plus" onclick="update(6, true);">+</div>';
+echo    '<div class="dec plus" onclick="update(6, false);">-</div>                       ';
+echo    '</div>';
+echo    '<span class="item_prices"id="price-6">£40 each</span>';
+echo    '</span>';
+echo    '<span class="quotebox">';
+echo    '<h4>Single Bedroom</h4>';
+echo    '<p>or breakfast room</p>';
+echo    '<div class="elementsQuantity">';
+echo    '<input';
+echo    'id="input-7"';
+echo    'class="quantityBox"';
+echo    'onFocus="clearDefault(this)"';
+echo    'type="textbox"';
+echo    'name="Single_Bedroom"';
+echo    'value="0" ';
+echo    '/>';
+echo    '<div class="inc plus" onclick="update(7, true);">+</div>';
+echo    '<div class="dec plus" onclick="update(7, false);">-</div>                         ';
+echo    '</div>';
+echo    '<span class="item_prices"id="price-7">£20 each</span>';
+echo    '</span>';
+echo    '<span class="quotebox">';
+echo    '<h4>Box Room/Office</h4>';
+echo    '<p>or shower room</p>';
+echo    '<div class="elementsQuantity">';
+echo    '<input';
+echo    'id="input-8"';
+echo    'class="quantityBox"';
+echo    'onFocus="clearDefault(this)"';
+echo    'type="textbox"';
+echo    'name="Box_Room/Office"';
+echo    'value="0"';
+echo    '/>';
+echo    '<div class="inc plus" onclick="update(8, true);">+</div>';
+echo    '<div class="dec plus" onclick="update(8, false);">-</div>                       ';
+echo    '</div>';
+echo    '<span class="item_prices"id="price-8">£15 each</span>';
+echo    '</span>';
+echo    '<span class="quotebox">';
+echo    '<h4>Small Hall/Landing</h4>';
+echo    '<p>small bedroom/office</p>';
+echo    '<div class="elementsQuantity">';
+echo    '<input';
+echo    'id="input-9"';
+echo    'class="quantityBox"';
+echo    'onFocus="clearDefault(this)"';
+echo    'type="textbox"';
+echo    'name="Small_Hall/Landing"';
+echo    'value="0"';
+echo    '/>';
+echo    '<div class="inc plus" onclick="update(9, true);">+</div>';
+echo    '<div class="dec plus" onclick="update(9, false);">-</div>                          ';
+echo    '</div>';
+echo    '<span class="item_prices"id="price-9">£5 each</span>';
+echo    '</span>';
+echo    '<span class="quotebox">';
+echo    '<h4>Large Hall/Landing</h4>';
+echo    '<p>up to 1 metre</p>';
+echo    '<div class="elementsQuantity">';
+echo    '<input';
+echo    'id="input-10"';
+echo    'class="quantityBox"';
+echo    'onFocus="clearDefault(this)"';
+echo    'type="textbox"';
+echo    'name="Large_Hall/Landing"';
+echo    'value="0"';
+echo    '/>';
+echo    '<div class="inc plus" onclick="update(10, true);">+</div>';
+echo    '<div class="dec plus" onclick="update(10, false);">-</div>                          ';
+echo    '</div>';
+echo    '<span class="item_prices"id="price-10">£10 each</span>';
+echo    '</span>';
+echo    '<span class="quotebox">';
+echo    '<h4>Staircase</h4>';
+echo    '<p>per flight</p>';
+echo    '<div class="elementsQuantity">';
+echo    '<input';
+echo    'id="input-11"';
+echo    'class="quantityBox"';
+echo    'onFocus="clearDefault(this)"';
+echo    'type="textbox"';
+echo    'name="Staircase"';
+echo    'value="0"';
+echo    '/>';
+echo    '<div class="inc plus" onclick="update(11, true);">+</div>';
+echo    '<div class="dec plus" onclick="update(11, false);">-</div>                        ';
+echo    '</div>';
+echo    '<span class="item_prices"id="price-11">£15 each</span>';
+echo    '</span>';
+echo    '<span class="quotebox">';
+echo    '<h4>Large Bathroom</h4>';
+echo    '<p>between 2 - 3 metres</p>';
+echo    '<div class="elementsQuantity">';
+echo    '<input';
+echo    'id="input-12"';
+echo    'class="quantityBox"';
+echo    'onFocus="clearDefault(this)"';
+echo    'type="textbox"';
+echo    'name="Large_Bathroom"';
+echo    'value="0"';
+echo    '/>';
+echo    '<div class="inc plus" onclick="update(12, true);">+</div>';
+echo    '<div class="dec plus" onclick="update(12, false);">-</div>                         ';
+echo    '</div>';
+echo    '<span class="item_prices"id="price-12">£10 each</span>';
+echo    '</span>';
+echo    '</span>';
+echo    '<span class="liquid_left2">';
+echo    '<h3>Small Bathroom/Toilet</h3>';
+echo    '<span class="quotebox">';
+echo    '<h4>3 Piece Sofa Set</h4>';
+echo    '<div class="elementsQuantity">';
+echo    '<input';
+echo    'id="input-13"';
+echo    'class="quantityBox"';
+echo    'onFocus="clearDefault(this)"';
+echo    'type="textbox"';
+echo    'name="Small_Bathroom/Toilet"';
+echo    'value="0"';
+echo    '/>';
+echo    '<div class="inc plus" onclick="update(13, true);">+</div>';
+echo    '<div class="dec plus" onclick="update(13, false);">-</div>                       ';
+echo    '</div>';
+echo    '<span class="item_prices"id="price-13">£5 each</span>';
+echo    '</span>';
+echo    '<span class="quotebox">';
+echo    '<h4>Small Rug</h4>';
+echo    '<div class="elementsQuantity">';
+echo    '<input';
+echo    'id="input-14"';
+echo    'class="quantityBox"';
+echo    'onFocus="clearDefault(this)"';
+echo    'type="qty"';
+echo    'name="Small_Rug"';
+echo    'value="0"';
+echo    '/>';
+echo    '<div class="inc plus" onclick="update(14, true);">+</div>';
+echo    '<div class="dec plus" onclick="update(14, false);">-</div>                         ';
+echo    '</div>';
+echo    '<span class="item_prices"id="price-14">£5 each</span>';
+echo    '</span>';
+echo    '<span class="quotebox">';
+echo    '<h4>Large Rug';
+echo    '</h4>';
+echo    '<div class="elementsQuantity">';
+echo    '<input';
+echo    'id="input-15"';
+echo    'class="quantityBox"';
+echo    'onFocus="clearDefault(this)"';
+echo    'type="textbox"';
+echo    'name="Large_Rug"';
+echo    'value="0"';
+echo    '/>';
+echo    '<div class="inc plus" onclick="update(15, true);">+</div>';
+echo    '<div class="dec plus" onclick="update(15, false);">-</div>                    ';
+echo    '</div>';
+echo    '<span class="item_prices"id="price-15">£10 each</span>';
+echo    '</span>';
+echo    '</span>';
+echo    '</span>';
+echo    '</span>';
+echo    '<span class="click"> Click + to increase - to decrease items the exact cost will update below</span>';
+echo    '<span class="quoteTotalBox2">';
+echo    '<span id="calcuateTotalBox2">';
+echo    '<table width="100%">';
+echo    '<tbody>';
+echo    '<tr>';
+echo    '<td valign="bottom" width="40px">Qty</td>';
+echo    '<td valign="bottom" width="80px">Description</td>';
+echo    '<td valign="bottom" width="70px">+ Scotchgard</td>';
+echo    '<td valign="bottom" width="70px">+ Deodorise </td>';
+echo    '<td valign="bottom" width="70px">+ Insecticide </td>';
+echo    '<td valign="bottom" width="40px">&nbsp;</td>';
+echo    '</tr>';
+echo    '</tbody>';
+echo    '</table>';
+echo    '</span>';
+echo    '<span class="quoteInnerBox2">';
+echo    '<span class="totalLine2">Total cost for above work';
+echo    '<span class="totalPrice2">£<span id="total_work">0.00</span></span>';
+echo    '<span class="VAT">VAT is included within this total</span>';
+echo    '</span>';
+echo    '<span class="formSectionContent">';
+echo    '<p>Simply enter your details below and we will';
+echo    'call you to arrange a date for the clean</p>';
+echo    '<p>Alternatively call us now on free phone<br/> <strong>0800 015 6262</strong><p/>';
+echo    '<label>Name:</label>';
+echo    '<input';
+echo    'id="name"';
+echo    'required="required"';
+echo    'class="required"';
+echo    'minlength="3"';
+echo    'value=""';
+echo    'name="name"';
+echo    '/>';
+echo    '<span class="total_error"></span>';
+echo    '<label>Telephone:</label>';
+echo    '<input';
+echo    'id="phone"';
+echo    'type="text"';
+echo    'required="required"';
+echo    'minlength="6"';
+echo    'value=""';
+echo    'name="phone"';
+echo    '/>';
+echo    '<span class="total_error"></span>';
+echo    '<label>Email:</label>';
+echo    '<input';
+echo    'id="email"';
+echo    'required="required"';
+echo    'class="required"';
+echo    'type="text" ';
+echo    'value=""';
+echo    'name="email"';
+echo    '/>';
+echo    '<span class="total_error"></span>';
+echo    '<label>Postcode begins?</label>';
+echo    '<select name="postcode" id="postcode" required="required" value="">';
+echo    '<option value="postcode  ">Please Select... </option>';
+echo    '<option value="B  ">B </option>';
+echo    '<option value="BA  ">BA </option>';
+echo    '<option value="BS  ">BS</option>';
+echo    '<option value="CF  ">CF</option>';
+echo    '<option value="CV  ">CV</option>';
+echo    '<option value="DY  ">DY</option>';
+echo    '<option value="GL  ">GL</option>';
+echo    '<option value="HR  ">HR</option>';
+echo    '<option value="NP  ">NP</option>';
+echo    '<option value="SA  ">SA</option>';
+echo    '<option value="SN  ">SN</option>';
+echo    '<option value="TA  ">TA</option>';
+echo    '<option value="WR  ">WR</option>';
+echo    '<option value="Other  ">Other</option>';
+echo    '</select>';
+echo    '<span class="total_error"></span>';
+echo    '<label>How did you find us?</label>';
+echo    '<select name="select" id="find" required="required" value="">';
+echo    '<option value="Select  ">Please Select... </option>';
+echo    '<option value="Google  ">Google </option>';
+echo    '<option value="Yahoo  ">Yahoo</option>';
+echo    '<option value="Bing  ">Bing</option>';
+echo    '<option value="Leaflet/Flyer  ">Leaflet/Flyer</option>';
+echo    '<option value="Magazine  ">Magazine</option>';
+echo    '<option value="Friend or Family  ">Friend or Family</option>';
+echo    '<option value="Returning Customer">Returning Customer</option>';
+echo    '<option value="Other  ">Other</option>';
+echo    '</select>';
+echo    '<span class="total_error"></span>';
+echo    '<input id="carpet-total" type="hidden" name="carpet-total" value="0" />';
+echo    '<input id="upholstery-total" type="hidden" name="uphostlery-total" value="0" />';
+echo    '<input id="grand-total" type="hidden" name="grand-total" value="0" />';
+echo    '<input id="Hallway_andrews_extra" type="hidden" name="Hallway_andrews_extra" value="" />';
+echo    '<input id="Stairs_andrews_extra" type="hidden" name="Stairs_andrews_extra" value="" />';
+echo    '<input id="Landing_andrews_extra" type="hidden" name="Landing_andrews_extra" value="" />';
+echo    '<input id="Lounge_andrews_extra" type="hidden" name="Lounge_andrews_extra" value="" />';
+echo    '<input id="Dining_Room_andrews_extra" type="hidden" name="Dining_Room_andrews_extra" value="" />';
+echo    '<input id="Bathroom_andrews_extra" type="hidden" name="Bathroom_andrews_extra" value="" />';
+echo    '<input id="Bedroom_andrews_extra" type="hidden" name="Bedroom_andrews_extra" value="" />';
+echo    '<input id="Lounge_Diner_andrews_extra" type="hidden" name="Lounge_Diner_andrews_extra" value="" />';
+echo    '<input id="Box_Room_andrews_extra" type="hidden" name="Box_Room_andrews_extra" value="" />';
+echo    '<input id="Rugs_Small_andrews_extra" type="hidden" name="Rugs_Small_andrews_extra" value="" />';
+echo    '<input id="Rugs_Medium_andrews_extra" type="hidden" name="Rugs_Medium_andrews_extra" value="" />';
+echo    '<input id="Rugs_Large_andrews_extra" type="hidden" name="Rugs_Large_andrews_extra" value="" />';
+echo    '<input id="Armchair_andrews_extra" type="hidden" name="Armchair_andrews_extra" value="" />';
+echo    '<input id="2_Seater_Sofa_andrews_extra" type="hidden" name="2_Seater_Sofa_andrews_extra" value="" />';
+echo    '<input id="3_Seater_Sofa_andrews_extra" type="hidden" name="3_Seater_Sofa_andrews_extra" value="" />';
+echo    '<input id="4_Seater_Sofa_andrews_extra" type="hidden" name="4_Seater_Sofa_andrews_extra" value="" />';
+echo    '<input id="Puff_Foot_Rest_andrews_extra" type="hidden" name="Puff_Foot_Rest_andrews_extra" value="" />';
+echo    '<input id="Dining_Chair_andrews_extra" type="hidden" name="Dining_Chair_andrews_extra" value="" />';
+echo    '<input id="Corner_Suite_andrews_extra" type="hidden" name="Corner_Suite_andrews_extra" value="" />';
+echo    '<input id="3_Piece_Suite_andrews_extra" type="hidden" name="3_Piece_Suite_andrews_extra" value="" />';
+echo    '<input id="Hallway_andrews_insect" type="hidden" name="Hallway_andrews_insect" value="" />';
+echo    '<input id="Stairs_andrews_insect" type="hidden" name="Stairs_andrews_insect" value="" />';
+echo    '<input id="Landing_andrews_insect" type="hidden" name="Landing_andrews_insect" value="" />';
+echo    '<input id="Lounge_andrews_insect" type="hidden" name="Lounge_andrews_insect" value="" />';
+echo    '<input id="Dining_Room_andrews_insect" type="hidden" name="Dining_Room_andrews_insect" value="" />';
+echo    '<input id="Bathroom_andrews_insect" type="hidden" name="Bathroom_andrews_insect" value="" />';
+echo    '<input id="Bedroom_andrews_insect" type="hidden" name="Bedroom_andrews_insect" value="" />';
+echo    '<input id="Lounge_Diner_andrews_insect" type="hidden" name="Lounge_Diner_andrews_insect" value="" />';
+echo    '<input id="Box_Room_andrews_insect" type="hidden" name="Box_Room_andrews_insect" value="" />';
+echo    '<input id="Rugs_Small_andrews_insect" type="hidden" name="Rugs_Small_andrews_insect" value="" />';
+echo    '<input id="Rugs_Medium_andrews_insect" type="hidden" name="Rugs_Medium_andrews_insect" value="" />';
+echo    '<input id="Rugs_Large_andrews_insect" type="hidden" name="Rugs_Large_andrews_insect" value="" />';
+echo    '<input id="Armchair_andrews_insect" type="hidden" name="Armchair_andrews_insect" value="" />';
+echo    '<input id="2_Seater_Sofa_andrews_insect" type="hidden" name="2_Seater_Sofa_andrews_insect" value="" />';
+echo    '<input id="3_Seater_Sofa_andrews_insect" type="hidden" name="3_Seater_Sofa_andrews_insect" value="" />';
+echo    '<input id="4_Seater_Sofa_andrews_insect" type="hidden" name="4_Seater_Sofa_andrews_insect" value="" />';
+echo    '<input id="Puff_Foot_Rest_andrews_insect" type="hidden" name="Puff_Foot_Rest_andrews_insect" value="" />';
+echo    '<input id="Dining_Chair_andrews_insect" type="hidden" name="Dining_Chair_andrews_insect" value="" />';
+echo    '<input id="Corner_Suite_andrews_insect" type="hidden" name="Corner_Suite_andrews_insect" value="" />';
+echo    '<input id="3_Piece_Suite_andrews_insect" type="hidden" name="3_Piece_Suite_andrews_insect" value="" />';
+echo    '<input id="Hallway_andrews_deodorise" type="hidden" name="Hallway_andrews_deodorise" value="" />';
+echo    '<input id="Stairs_andrews_deodorise" type="hidden" name="Stairs_andrews_deodorise" value="" />';
+echo    '<input id="Landing_andrews_deodorise" type="hidden" name="Landing_andrews_deodorise" value="" />';
+echo    '<input id="Lounge_andrews_deodorise" type="hidden" name="Lounge_andrews_deodorise" value="" />';
+echo    '<input id="Dining_Room_andrews_deodorise" type="hidden" name="Dining_Room_andrews_deodorise" value="" />';
+echo    '<input id="Bathroom_andrews_deodorise" type="hidden" name="Bathroom_andrews_deodorise" value="" />';
+echo    '<input id="Bedroom_andrews_deodorise" type="hidden" name="Bedroom_andrews_deodorise" value="" />';
+echo    '<input id="Lounge_Diner_andrews_deodorise" type="hidden" name="Lounge_Diner_andrews_deodorise" value="" />';
+echo    '<input id="Box_Room_andrews_deodorise" type="hidden" name="Box_Room_andrews_deodorise" value="" />';
+echo    '<input id="Rugs_Small_andrews_deodorise" type="hidden" name="Rugs_Small_andrews_deodorise" value="" />';
+echo    '<input id="Rugs_Medium_andrews_deodorise" type="hidden" name="Rugs_Medium_andrews_deodorise" value="" />';
+echo    '<input id="Rugs_Large_andrews_deodorise" type="hidden" name="Rugs_Large_andrews_deodorise" value="" />';
+echo    '<input id="Armchair_andrews_deodorise" type="hidden" name="Armchair_andrews_deodorise" value="" />';
+echo    '<input id="2_Seater_Sofa_andrews_deodorise" type="hidden" name="2_Seater_Sofa_andrews_deodorise" value="" />';
+echo    '<input id="3_Seater_Sofa_andrews_deodorise" type="hidden" name="3_Seater_Sofa_andrews_deodorise" value="" />';
+echo    '<input id="4_Seater_Sofa_andrews_deodorise" type="hidden" name="4_Seater_Sofa_andrews_deodorise" value="" />';
+echo    '<input id="Puff_Foot_Rest_andrews_deodorise" type="hidden" name="Puff_Foot_Rest_andrews_deodorise" value="" />';
+echo    '<input id="Dining_Chair_andrews_deodorise" type="hidden" name="Dining_Chair_andrews_deodorise" value="" />';
+echo    '<input id="Corner_Suite_andrews_deodorise" type="hidden" name="Corner_Suite_andrews_deodorise" value="" />';
+echo    '<input id="3_Piece_Suite_andrews_deodorise" type="hidden" name="3_Piece_Suite_andrews_deodorise" value="" />';
+echo    '<input id="submit-btn" type="submit" name="Submit" class="button-send" value="Click to request call back" />';
+echo    '<p id="total_message"> </p>';
+echo    '</span>';
+echo    '</span>';
+echo    '</form>';
+echo    '<script src="assets/templates/icwebdesign/jquery.validate.js"></script>';
+echo    '<script src="assets/templates/icwebdesign/bootstrap-tooltip.js"></script>';
+echo    '<script src="assets/templates/icwebdesign/bootstrap-popover.js"></script>';
+echo    '<script src="assets/templates/icwebdesign/smartclean.js"></script>';
+echo    '</p>';
+echo    '</div></div>';
+echo    '</div>';
+}
+?>
+<script>
+                    function addUp()
+                    {
+                        var price = 0;
+                        for (var i = 1; i <= 15; i++)
+                        {
+                            price += (document.getElementById("input-"+i).value*parseFloat(document.getElementById("price-"+i).innerHTML.split(" ")[0].split("£")[1]));
+                        }    
+                        document.getElementById("total_work").innerHTML = price.toFixed(2);
+                    }
+
+                    function update(inputNo, inc)
+                    {
+                            tb = document.getElementById("input-"+inputNo);
+                            currVal = tb.value;
+                            if (isNaN(currVal))
+                            {
+                                document.getElementById("input-"+inputNo).value = 0;
+                            }
+                            else
+                            {
+                                if (inc)
+                                {
+                                    document.getElementById("input-"+inputNo).value++;
+                                        
+                                }   
+                                else
+                                {
+                                    if (currVal > 0)
+                                    {
+                                        document.getElementById("input-"+inputNo).value--;
+                                    }
+                                    
+
+                                } 
+                            }
+                            addUp();
+                    }
+                    </script>
+                   
+</body>
+</html>
+
+<?php
+function cf_shortcode() {
+    html_form_code();
+ 
+    return ob_get_clean();
+}
+
+
+add_shortcode( 'sitepoint_contact_form', 'cf_shortcode' );
+?>
